@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --bg-glass: rgba(255, 255, 255, 0.07);
+  --accent: rgba(10, 40, 80, 0.55);
+  --text-main: #eaf2ff;
+  --text-muted: #a3b6d9;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(pexels-chudin-alexey-11996274.jpg);
+}
+
+.container {
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    padding-top: 70px;
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-main);
+}
+
+.nav .left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.nav h4 {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+     color: var(--text-muted);
+}
+
+.nav .right input {
+        background-color: var(--bg-glass);
+    color: var(--text-main);
+    padding: 16px 130px;
+    border: none;
+    border-radius: 7px;
+    position: relative;
+    margin-right: 12px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 
+    0 8px 20px rgba(10, 40, 80, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+}
+.nav .right input::placeholder {
+    color: var(--text-muted);
+}
+
+.nav .right input:focus {
+    outline: none;
+     box-shadow:
+        0 10px 25px rgba(10, 40, 80, 0.55),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.nav .right button {
+    padding: 13px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--accent);
+    color: var(--text-main);
+}
+
+.nav .right button:active{
+    transition: all ease-in 0.5s;
+    scale: 0.75;
+}
+.nav .right .search {
+    position: absolute;
+    left: 91%;
+    top: 12%;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    color: var(--text-main);
+}
+
+.main .temp{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .temp h1{
+    font-size: 100px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.main .temp span{
+    position: absolute;
+    left: 18%;
+    top: 35%;
+}
+
+.main .temp span h3{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+      color: var(--text-muted);
+
+}
+
+.main .cloud{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .cloud span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.main .cloud .cloud-img{
+    position: absolute;
+    top: 29%;
+    right: 11%;
+}
+
+.main .cloud .cloud-img img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 100px;
+     box-shadow:
+        0 10px 25px rgba(10, 40, 80, 0.55),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.footer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0px;
+    border-radius: 22px;
+    background-color: var(--bg-glass);
+    color: var(--text-main);
+}
+
+.footer .individual{
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .individual img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer .individual h4{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: sans-serif;
+     color: var(--text-muted);
+}
+
+.footer .individual h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
